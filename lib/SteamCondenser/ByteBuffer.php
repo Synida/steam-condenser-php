@@ -70,7 +70,7 @@ class ByteBuffer {
      */
     public function __construct($byteArray) {
         $this->byteArray = $byteArray;
-        $this->capacity = strlen($byteArray);
+        $this->capacity = isset($byteArray) ? strlen($byteArray) : 0;
         $this->limit = $this->capacity;
         $this->position = 0;
     }
@@ -219,10 +219,10 @@ class ByteBuffer {
     public function limit($newLimit = null) {
         if($newLimit == null) {
             return $this->limit;
-        } else {
-            $this->limit = $newLimit;
-            return null;
         }
+
+        $this->limit = $newLimit;
+        return null;
     }
 
     /**
