@@ -10,7 +10,7 @@
  * @package steam-condenser
  */
 
-namespace SteamCondenser;
+namespace Synida\SteamCondenser;
 
 use Monolog\Logger;
 
