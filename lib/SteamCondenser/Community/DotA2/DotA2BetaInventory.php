@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\DotA2;
+namespace Synida\SteamCondenser\Community\DotA2;
 
-use SteamCondenser\Community\GameInventory;
+use Synida\SteamCondenser\Community\GameInventory;
 
 /**
  * Represents the inventory of a player of the DotA 2 beta

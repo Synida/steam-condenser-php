@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
 /**
  * Provides basic functionality to represent an item in a game
@@ -99,7 +99,7 @@ class GameItem {
      *
      * @param GameInventory $inventory The inventory this item is contained in
      * @param \stdClass $itemData The data specifying this item
-     * @throws \SteamCondenser\Exceptions\WebApiException on Web API errors
+     * @throws \Synida\SteamCondenser\Exceptions\WebApiException on Web API errors
      */
     public function __construct(GameInventory $inventory, $itemData) {
         $this->inventory = $inventory;
@@ -247,7 +247,7 @@ class GameItem {
      * Returns the data for this item that's defined in the item schema
      *
      * @return array The schema data for this item
-     * @throws \SteamCondenser\Exceptions\SteamCondenserException if the item
+     * @throws \Synida\SteamCondenser\Exceptions\SteamCondenserException if the item
      *         schema cannot be loaded
      */
     public function  getSchemaData() {

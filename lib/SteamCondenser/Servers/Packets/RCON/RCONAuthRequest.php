@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets\RCON;
+namespace Synida\SteamCondenser\Servers\Packets\RCON;
 
 /**
  * This packet class represents a SERVERDATA_AUTH request sent to a Source

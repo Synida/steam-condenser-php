@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
 /**
  * This packet class represents a S2C_CHALLENGE response replied by a game

@@ -8,13 +8,13 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
-use SteamCondenser\Community\DotA2\DotA2BetaInventory;
-use SteamCondenser\Community\DotA2\DotA2Inventory;
-use SteamCondenser\Community\Portal2\Portal2Inventory;
-use SteamCondenser\Community\TF2\TF2BetaInventory;
-use SteamCondenser\Community\TF2\TF2Inventory;
+use Synida\SteamCondenser\Community\DotA2\DotA2BetaInventory;
+use Synida\SteamCondenser\Community\DotA2\DotA2Inventory;
+use Synida\SteamCondenser\Community\Portal2\Portal2Inventory;
+use Synida\SteamCondenser\Community\TF2\TF2BetaInventory;
+use Synida\SteamCondenser\Community\TF2\TF2Inventory;
 
 /**
  * Provides basic functionality to represent an inventory of player in a game
@@ -135,7 +135,7 @@ class GameInventory {
      *
      * @param int $appId The application ID of the game
      * @param string $steamId64 The 64bit Steam ID of the user
-     * @throws \SteamCondenser\Exceptions\WebApiException on Web API errors
+     * @throws \Synida\SteamCondenser\Exceptions\WebApiException on Web API errors
      */
     protected function __construct($appId, $steamId64) {
         $this->appId = $appId;
@@ -170,7 +170,7 @@ class GameInventory {
      *
      * @return GameItemSchema The item schema for the game this inventory
      *         belongs to
-     * @throws \SteamCondenser\Exceptions\WebApiException on Web API errors
+     * @throws \Synida\SteamCondenser\Exceptions\WebApiException on Web API errors
      */
     public function getItemSchema() {
         if ($this->itemSchema == null) {

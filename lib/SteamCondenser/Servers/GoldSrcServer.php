@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Exceptions\RCONNoAuthException;
+use Synida\SteamCondenser\Exceptions\RCONNoAuthException;
 
 /**
  * This class represents a GoldSrc game server and can be used to query

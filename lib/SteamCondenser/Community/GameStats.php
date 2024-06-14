@@ -8,10 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
-use SteamCondenser\Exceptions\SteamCondenserException;
-use SteamCondenser\Community\AlienSwarmStats;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
 
 /**
  * This class represents the game statistics for a single user and a specific

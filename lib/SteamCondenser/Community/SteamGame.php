@@ -6,9 +6,9 @@
  * Copyright (c) 2011-2015, Sebastian Staudt
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
-use SteamCondenser\Exceptions\SteamCondenserException;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
 
 /**
  * This class represents a game available on Steam

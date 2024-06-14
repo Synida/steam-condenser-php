@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Exceptions;
+namespace Synida\SteamCondenser\Exceptions;
 
 /**
  * This exception class indicates that you have not authenticated yet with the

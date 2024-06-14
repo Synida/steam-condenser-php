@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\Portal2;
+namespace Synida\SteamCondenser\Community\Portal2;
 
-use SteamCondenser\Community\GameInventory;
+use Synida\SteamCondenser\Community\GameInventory;
 
 /**
  * Represents the inventory (aka. Robot Enrichment) of a Portal 2 player

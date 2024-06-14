@@ -8,17 +8,16 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Exceptions\SteamCondenserException;
-use SteamCondenser\Servers\Packets\SteamPacket;
-use SteamCondenser\Servers\Packets\A2SINFOPacket;
-use SteamCondenser\Servers\Packets\A2SPLAYERPacket;
-use SteamCondenser\Servers\Packets\A2SRULESPacket;
-use SteamCondenser\Servers\Packets\S2AINFOBasePacket;
-use SteamCondenser\Servers\Packets\S2APLAYERPacket;
-use SteamCondenser\Servers\Packets\S2ARULESPacket;
-use SteamCondenser\Servers\Packets\S2CCHALLENGEPacket;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
+use Synida\SteamCondenser\Servers\Packets\A2SINFOPacket;
+use Synida\SteamCondenser\Servers\Packets\A2SPLAYERPacket;
+use Synida\SteamCondenser\Servers\Packets\A2SRULESPacket;
+use Synida\SteamCondenser\Servers\Packets\S2AINFOBasePacket;
+use Synida\SteamCondenser\Servers\Packets\S2APLAYERPacket;
+use Synida\SteamCondenser\Servers\Packets\S2ARULESPacket;
+use Synida\SteamCondenser\Servers\Packets\S2CCHALLENGEPacket;
 
 /**
  * This class is subclassed by classes representing different game server
@@ -67,7 +66,7 @@ abstract class GameServer extends Server {
     protected $rulesHash;
 
     /**
-     * @var \SteamCondenser\Servers\Sockets\SteamSocket The socket of to
+     * @var \Synida\SteamCondenser\Servers\Sockets\SteamSocket The socket of to
      *      communicate with the server
      */
     protected $socket;

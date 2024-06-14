@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
-use SteamCondenser\Exceptions\SteamCondenserException;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
 
 /**
  * This class is used to streamline access to XML-based data resources

@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser;
+namespace Synida\SteamCondenser;
 
-use SteamCondenser\Exceptions\BufferUnderflowException;
+use Synida\SteamCondenser\Exceptions\BufferUnderflowException;
 
 /**
  * This class represents a byte buffer which helps reading byte-wise data from

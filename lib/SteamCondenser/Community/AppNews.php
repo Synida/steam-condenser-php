@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
 /**
  * This class represents Steam news and can be used to load a list of current

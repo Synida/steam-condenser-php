@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
 class SourceSocketTest extends \PHPUnit_Framework_TestCase {
 
@@ -17,7 +17,7 @@ class SourceSocketTest extends \PHPUnit_Framework_TestCase {
         $this->socketBuilder->disableOriginalConstructor();
         $this->socketBuilder->setMethods(['receivePacket']);
         $this->socket = $this->socketBuilder->getMock();
-        $this->socket->setLogger(\SteamCondenser\getLogger(get_class($this->socket)));
+        $this->socket->setLogger(\Synida\SteamCondenser\getLogger(get_class($this->socket)));
 
         $this->buffer = $this->getMockBuilder('\SteamCondenser\ByteBuffer')->disableOriginalConstructor()->getMock();
         $reflectionSocket = new \ReflectionObject($this->socket);

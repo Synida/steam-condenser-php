@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Exceptions\SteamCondenserException;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
 
 /**
  * This class represents a player connected to a game server

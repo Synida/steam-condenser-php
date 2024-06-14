@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
 /**
  * This module implements methods to generate and access server information

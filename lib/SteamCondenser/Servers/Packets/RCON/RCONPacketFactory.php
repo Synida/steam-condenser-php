@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets\RCON;
+namespace Synida\SteamCondenser\Servers\Packets\RCON;
 
-use \SteamCondenser\ByteBuffer;
-use \SteamCondenser\Exceptions\PacketFormatException;
+use Synida\SteamCondenser\ByteBuffer;
+use Synida\SteamCondenser\Exceptions\PacketFormatException;
 
 /**
  * This module provides functionality to handle raw packet data for Source RCON

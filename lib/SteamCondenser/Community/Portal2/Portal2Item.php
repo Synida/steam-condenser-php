@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\Portal2;
+namespace Synida\SteamCondenser\Community\Portal2;
 
-use SteamCondenser\Community\GameItem;
+use Synida\SteamCondenser\Community\GameItem;
 
 /**
  * Represents a Portal 2 item
@@ -37,7 +37,7 @@ class Portal2Item extends GameItem {
      * @param Portal2Inventory $inventory The inventory this item is contained
      *        in
      * @param \stdClass $itemData The data specifying this item
-     * @throws \SteamCondenser\Exceptions\WebApiException on Web API errors
+     * @throws \Synida\SteamCondenser\Exceptions\WebApiException on Web API errors
      */
     public function __construct(Portal2Inventory $inventory, $itemData) {
         parent::__construct($inventory, $itemData);

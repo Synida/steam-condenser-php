@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets\RCON;
+namespace Synida\SteamCondenser\Servers\Packets\RCON;
 
-use SteamCondenser\Servers\Packets\SteamPacket;
+use Synida\SteamCondenser\Servers\Packets\SteamPacket;
 
 /**
  * This packet class represents a RCON request packet sent to a GoldSrc server

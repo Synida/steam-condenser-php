@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\GameStatsDatum;
+namespace Synida\SteamCondenser\Community\GameStatsDatum;
 
-use SteamCondenser\Community\GameStatsDatum;
-use SteamCondenser\Community\SteamId;
+use Synida\SteamCondenser\Community\GameStatsDatum;
+use Synida\SteamCondenser\Community\SteamId;
 
 class Instance {
 

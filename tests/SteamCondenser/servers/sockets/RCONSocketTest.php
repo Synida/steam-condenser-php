@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
-use SteamCondenser\Exceptions\ConnectionResetException;
+use Synida\SteamCondenser\Exceptions\ConnectionResetException;
 
 class TestableRCONSocket extends RCONSocket {
 

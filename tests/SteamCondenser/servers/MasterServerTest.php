@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Exceptions\TimeoutException;
-use SteamCondenser\Servers\Packets\M2ASERVERBATCHPacket;
+use Synida\SteamCondenser\Exceptions\TimeoutException;
+use Synida\SteamCondenser\Servers\Packets\M2ASERVERBATCHPacket;
 
 class TestableMasterServer extends MasterServer {
 
@@ -28,7 +28,7 @@ class MasterServerTest extends \PHPUnit_Framework_TestCase {
     public function setUp() {
         $this->socket = $this->getMockBuilder('\SteamCondenser\Servers\Sockets\MasterServerSocket')->disableOriginalConstructor()->setMethods(['getReply', 'send'])->getMock();
         $this->server = $this->getMockBuilder('\SteamCondenser\Servers\TestableMasterServer')->disableOriginalConstructor()->setMethods(['rotateIp'])->getMock();
-        $this->server->setLogger(\SteamCondenser\getLogger(get_class($this->server)));
+        $this->server->setLogger(\Synida\SteamCondenser\getLogger(get_class($this->server)));
 
         $this->server->socket = $this->socket;
     }

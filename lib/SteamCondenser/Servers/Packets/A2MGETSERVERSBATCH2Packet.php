@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
-use SteamCondenser\Servers\MasterServer;
+use Synida\SteamCondenser\Servers\MasterServer;
 
 /**
  * This packet class represents a A2M_GET_SERVERS_BATCH2 request sent to a

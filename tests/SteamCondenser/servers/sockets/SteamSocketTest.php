@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
 class GenericSteamSocket extends SteamSocket {
 
@@ -58,7 +58,7 @@ class SteamSocketTest extends \PHPUnit_Framework_TestCase {
     }
 
     public function testReceiveIntoExistingBuffer() {
-        $this->socket->buffer = \SteamCondenser\ByteBuffer::allocate(10);
+        $this->socket->buffer = \Synida\SteamCondenser\ByteBuffer::allocate(10);
 
         $this->udpSocket->expects($this->once())->method('select')->will($this->returnValue(true));
         $this->udpSocket->expects($this->once())->method('recv')->with(4)->will($this->returnValue('test'));

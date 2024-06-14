@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\GameAchievement;
+namespace Synida\SteamCondenser\Community\GameAchievement;
 
-use SteamCondenser\Community\GameAchievement;
-use SteamCondenser\Community\SteamId;
+use Synida\SteamCondenser\Community\GameAchievement;
+use Synida\SteamCondenser\Community\SteamId;
 
 class Instance {
 

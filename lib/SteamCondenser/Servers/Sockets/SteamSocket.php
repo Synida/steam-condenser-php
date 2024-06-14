@@ -8,16 +8,16 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
-use SteamCondenser\ByteBuffer;
-use SteamCondenser\UDPSocket;
-use SteamCondenser\Exceptions\ConnectionResetException;
-use SteamCondenser\Exceptions\SocketException;
-use SteamCondenser\Exceptions\TimeoutException;
-use SteamCondenser\Servers\Packets\SteamPacket;
+use Synida\SteamCondenser\ByteBuffer;
+use Synida\SteamCondenser\Exceptions\ConnectionResetException;
+use Synida\SteamCondenser\Exceptions\SocketException;
+use Synida\SteamCondenser\Exceptions\TimeoutException;
+use Synida\SteamCondenser\Servers\Packets\SteamPacket;
+use Synida\SteamCondenser\UDPSocket;
 
 /**
  * This abstract class implements common functionality for sockets used to
@@ -71,7 +71,7 @@ abstract class SteamSocket implements LoggerAwareInterface {
      * @param int $portNumber The port the server is listening on
      */
     public function __construct($ipAddress, $portNumber = 27015) {
-        $this->logger = \SteamCondenser\getLogger(get_class($this));
+        $this->logger = \Synida\SteamCondenser\getLogger(get_class($this));
 
         $this->socket = new UDPSocket();
         $this->socket->connect($ipAddress, $portNumber, 0);

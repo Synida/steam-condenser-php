@@ -6,7 +6,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
 /**
  * This abstract class implements a method to generate raw packet data used by

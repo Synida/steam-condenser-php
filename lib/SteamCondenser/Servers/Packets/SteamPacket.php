@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
-use SteamCondenser\ByteBuffer;
+use Synida\SteamCondenser\ByteBuffer;
 
 /**
  * This module implements the basic functionality used by most of the packets

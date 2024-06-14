@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\TF2;
+namespace Synida\SteamCondenser\Community\TF2;
 
-use SteamCondenser\Community\GameInventory;
+use Synida\SteamCondenser\Community\GameInventory;
 
 /**
  * Represents the inventory (aka. Backpack) of a Team Fortress 2 player

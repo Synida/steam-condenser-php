@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser;
+namespace Synida\SteamCondenser;
 
-use SteamCondenser\Exceptions\ConnectionResetException;
-use SteamCondenser\Exceptions\SocketException;
+use Synida\SteamCondenser\Exceptions\ConnectionResetException;
+use Synida\SteamCondenser\Exceptions\SocketException;
 
 /**
  * This class represents an IP socket

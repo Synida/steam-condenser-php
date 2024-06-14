@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
 abstract class TestableGameServer extends GameServer {
 
@@ -286,7 +286,7 @@ class GameServerTest extends \PHPUnit_Framework_TestCase {
 
     public function testHandleUnexpectedResponse() {
         $server = $this->serverBuilder->setMethods(['initSocket', 'rconAuth', 'rconExec'])->getMock();
-        $server->setLogger(\SteamCondenser\getLogger(get_class($server)));
+        $server->setLogger(\Synida\SteamCondenser\getLogger(get_class($server)));
 
         $packet1 = $this->getMockBuilder('\SteamCondenser\Servers\Packets\S2CCHALLENGEPacket')->disableOriginalConstructor()->setMethods(['getChallengeNumber'])->getMock();
         $packet1->expects($this->once())->method('getChallengeNumber')->will($this->returnValue(1234));

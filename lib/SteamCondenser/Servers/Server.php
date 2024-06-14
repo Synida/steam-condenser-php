@@ -8,11 +8,11 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
-use SteamCondenser\Exceptions\SteamCondenserException;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
 
 /**
  * This class is subclassed by all classes implementing server functionality
@@ -84,7 +84,7 @@ abstract class Server implements LoggerAwareInterface {
 
         $this->ipAddress = $this->ipAddresses[0];
 
-        $this->logger = \SteamCondenser\getLogger(get_class($this));
+        $this->logger = \Synida\SteamCondenser\getLogger(get_class($this));
 
         $this->initSocket();
     }

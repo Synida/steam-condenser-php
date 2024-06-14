@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
-use \SteamCondenser\Exceptions\PacketFormatException;
+use Synida\SteamCondenser\Exceptions\PacketFormatException;
 
 /**
  * This packet class represents a M2A_SERVER_BATCH response replied by a master

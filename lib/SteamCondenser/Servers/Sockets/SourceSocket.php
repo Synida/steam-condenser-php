@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
-use SteamCondenser\Exceptions\TimeoutException;
-use SteamCondenser\Servers\Packets\SteamPacketFactory;
+use Synida\SteamCondenser\Exceptions\TimeoutException;
+use Synida\SteamCondenser\Servers\Packets\SteamPacketFactory;
 
 /**
  * This class represents a socket used to communicate with game servers based

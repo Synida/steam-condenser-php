@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
-use \SteamCondenser\Exceptions\RCONBanException;
-use \SteamCondenser\Servers\Packets\SteamPacketFactory;
+use Synida\SteamCondenser\Exceptions\RCONBanException;
+use Synida\SteamCondenser\Servers\Packets\SteamPacketFactory;
 
 /**
  * This class represents a socket used to communicate with game servers based
@@ -57,7 +57,7 @@ class GoldSrcSocket extends SteamSocket {
      * bytes. Bigger packets will be split over several UDP packets. This
      * method reassembles split packets into single packet objects.
      *
-     * @return \SteamCondenser\Servers\Packets\SteamPacket The packet replied
+     * @return \Synida\SteamCondenser\Servers\Packets\SteamPacket The packet replied
      *         from the server
      */
     public function getReply() {
@@ -77,7 +77,7 @@ class GoldSrcSocket extends SteamSocket {
                 if(sizeof($splitPackets) < $packetCount) {
                     try {
                         $bytesRead = $this->receivePacket();
-                    } catch(\SteamCondenser\Exceptions\TimeoutException $e) {
+                    } catch(\Synida\SteamCondenser\Exceptions\TimeoutException $e) {
                         $bytesRead = 0;
                     }
                 } else {
@@ -116,7 +116,7 @@ class GoldSrcSocket extends SteamSocket {
         if($this->isHLTV) {
             try {
                 $response = $this->getReply()->getResponse();
-            } catch(\SteamCondenser\Exceptions\TimeoutException $e) {
+            } catch(\Synida\SteamCondenser\Exceptions\TimeoutException $e) {
                 $response = '';
             }
         } else {
@@ -124,9 +124,9 @@ class GoldSrcSocket extends SteamSocket {
         }
 
         if(trim($response) == 'Bad rcon_password.') {
-            throw new \SteamCondenser\Exceptions\RCONNoAuthException();
+            throw new \Synida\SteamCondenser\Exceptions\RCONNoAuthException();
         } elseif(trim($response) == 'You have been banned from this server.') {
-            throw new \SteamCondenser\Exceptions\RCONBanException();
+            throw new \Synida\SteamCondenser\Exceptions\RCONBanException();
         }
 
         $this->rconSend("rcon {$this->rconChallenge} $password");
@@ -165,6 +165,6 @@ class GoldSrcSocket extends SteamSocket {
      * @param string $command The RCON command to send to the server
      */
     public function rconSend($command) {
-        $this->send(new \SteamCondenser\Servers\Packets\RCON\RCONGoldSrcRequest($command));
+        $this->send(new \Synida\SteamCondenser\Servers\Packets\RCON\RCONGoldSrcRequest($command));
     }
 }

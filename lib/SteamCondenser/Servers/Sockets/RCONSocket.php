@@ -8,15 +8,15 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Sockets;
+namespace Synida\SteamCondenser\Servers\Sockets;
 
 use Monolog\Logger;
-use SteamCondenser\ByteBuffer;
-use SteamCondenser\Exceptions\ConnectionResetException;
-use SteamCondenser\SteamCondenser;
-use SteamCondenser\TCPSocket;
-use SteamCondenser\Servers\Packets\SteamPacket;
-use SteamCondenser\Servers\Packets\RCON\RCONPacketFactory;
+use Synida\SteamCondenser\ByteBuffer;
+use Synida\SteamCondenser\Exceptions\ConnectionResetException;
+use Synida\SteamCondenser\Servers\Packets\RCON\RCONPacketFactory;
+use Synida\SteamCondenser\Servers\Packets\SteamPacket;
+use Synida\SteamCondenser\SteamCondenser;
+use Synida\SteamCondenser\TCPSocket;
 
 /**
  * This class represents a socket used for RCON communication with game servers
@@ -50,7 +50,7 @@ class RCONSocket extends SteamSocket {
      * @param int $portNumber The port the server is listening on
      */
     public function __construct($ipAddress, $portNumber) {
-        $this->logger = \SteamCondenser\getLogger(get_class($this));
+        $this->logger = \Synida\SteamCondenser\getLogger(get_class($this));
 
         $this->buffer = ByteBuffer::allocate(1400);
         $this->ipAddress = $ipAddress;

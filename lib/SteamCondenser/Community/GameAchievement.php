@@ -8,9 +8,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
-use SteamCondenser\Community\GameAchievement\Instance;
+use Synida\SteamCondenser\Community\GameAchievement\Instance;
 
 /**
  * The GameAchievement class represents a specific achievement for a single
@@ -60,7 +60,7 @@ class GameAchievement {
      *        all application IDs
      * @return array The symbolic achievement names with the corresponding
      *         global unlock percentages
-     * @throws \SteamCondenser\Exceptions\WebApiException if a request to
+     * @throws \Synida\SteamCondenser\Exceptions\WebApiException if a request to
      *         Steam's Web API fails
      */
     public static function getGlobalPercentages($appId) {

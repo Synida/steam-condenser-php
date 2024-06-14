@@ -8,12 +8,12 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Exceptions\RCONBanException;
-use SteamCondenser\Exceptions\RCONNoAuthException;
-use SteamCondenser\Exceptions\SteamCondenserException;
-use SteamCondenser\Exceptions\TimeoutException;
+use Synida\SteamCondenser\Exceptions\RCONBanException;
+use Synida\SteamCondenser\Exceptions\RCONNoAuthException;
+use Synida\SteamCondenser\Exceptions\SteamCondenserException;
+use Synida\SteamCondenser\Exceptions\TimeoutException;
 
 /**
  * This class represents a Source game server and can be used to query

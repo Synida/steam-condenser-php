@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Servers\Packets\RCON\RCONAuthResponse;
-use SteamCondenser\Servers\Packets\RCON\RCONExecResponse;
+use Synida\SteamCondenser\Servers\Packets\RCON\RCONAuthResponse;
+use Synida\SteamCondenser\Servers\Packets\RCON\RCONExecResponse;
 
 class TestableSourceServer extends SourceServer {
 

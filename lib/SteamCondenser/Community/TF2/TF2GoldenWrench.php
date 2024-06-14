@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community\TF2;
+namespace Synida\SteamCondenser\Community\TF2;
 
-use SteamCondenser\Community\SteamId;
-use SteamCondenser\Community\WebApi;
+use Synida\SteamCondenser\Community\SteamId;
+use Synida\SteamCondenser\Community\WebApi;
 
 /**
  * Represents the special Team Fortress 2 item Golden Wrench. It includes the
@@ -53,7 +53,7 @@ class TF2GoldenWrench {
      * Returns all Golden Wrenches
      *
      * @return array All Golden Wrenches
-     * @throws \SteamCondenser\Exceptions\SteamCondenserException If an error
+     * @throws \Synida\SteamCondenser\Exceptions\SteamCondenserException If an error
      *         occurs querying the Web API or the Steam Community
      */
     public static function getGoldenWrenches() {

@@ -8,11 +8,11 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
-use SteamCondenser\Exceptions\WebApiException;
+use Synida\SteamCondenser\Exceptions\WebApiException;
 
 /**
  * This adds support for Steam Web API to classes needing this functionality.
@@ -160,7 +160,7 @@ class WebApi implements LoggerAwareInterface {
     private static function instance() {
         if (self::$instance == null) {
             self::$instance = new WebApi();
-            self::$instance->setLogger(\SteamCondenser\getLogger(get_class()));
+            self::$instance->setLogger(\Synida\SteamCondenser\getLogger(get_class()));
         }
 
         return self::$instance;

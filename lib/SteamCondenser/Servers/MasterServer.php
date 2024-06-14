@@ -8,11 +8,11 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers;
+namespace Synida\SteamCondenser\Servers;
 
-use SteamCondenser\Exceptions\TimeoutException;
-use SteamCondenser\Servers\Packets\A2MGETSERVERSBATCH2Packet;
-use SteamCondenser\Servers\Sockets\MasterServerSocket;
+use Synida\SteamCondenser\Exceptions\TimeoutException;
+use Synida\SteamCondenser\Servers\Packets\A2MGETSERVERSBATCH2Packet;
+use Synida\SteamCondenser\Servers\Sockets\MasterServerSocket;
 
 /**
  * This class represents a Steam master server and can be used to get game

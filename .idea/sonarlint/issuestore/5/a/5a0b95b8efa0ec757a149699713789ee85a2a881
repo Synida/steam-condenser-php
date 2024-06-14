@@ -1,0 +1,4 @@
+
+j	php:S3776Ò"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ê¤¯ú
+`	php:S1192T"FDefine a constant instead of duplicating this literal "/\s+/" 3 times.(²ˆşÿÿÿÿ
+V	php:S1793W"<Replace this "else if" keyword sequence by "elseif" keyword.(ÑãçÜıÿÿÿÿ

@@ -8,7 +8,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
 /**
  * Provides item definitions and related data that specify the items of a game
@@ -180,7 +180,7 @@ class GameItemSchema {
     /**
      * Updates the item definitions of this schema using the Steam Web API
      *
-     * @throws \SteamCondenser\Exceptions\WebApiException if the item schema
+     * @throws \Synida\SteamCondenser\Exceptions\WebApiException if the item schema
      *         cannot be fetched
      */
     public function internalFetch() {

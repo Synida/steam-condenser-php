@@ -8,10 +8,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace SteamCondenser\Servers\Packets;
+namespace Synida\SteamCondenser\Servers\Packets;
 
-use SteamCondenser\Exceptions\PacketFormatException;
-use SteamCondenser\Servers\Packets\RCON\RCONGoldSrcResponse;
+use Synida\SteamCondenser\Exceptions\PacketFormatException;
+use Synida\SteamCondenser\Servers\Packets\RCON\RCONGoldSrcResponse;
 
 /**
  * This module provides functionality to handle raw packet data, including data

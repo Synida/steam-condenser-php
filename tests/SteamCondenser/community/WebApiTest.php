@@ -6,7 +6,7 @@
  * Copyright (c) 2012-2015, Sebastian Staudt
  */
 
-namespace SteamCondenser\Community;
+namespace Synida\SteamCondenser\Community;
 
 class WebApiTest extends \PHPUnit_Framework_TestCase {
 
